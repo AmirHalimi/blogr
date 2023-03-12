@@ -1,0 +1,229 @@
+.content-m-a .powerful-tool h2, .content-m-a .about-blogr h2, .content-m-f .managment h2, .content-m-f .editor h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+@font-face {
+  font-family: overpass;
+  src: url(font/Overpass/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  src: url(font/Ubuntu/Ubuntu-Regular.ttf);
+}
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-site {
+  position: relative;
+  border-bottom-left-radius: 100px;
+  height: 60vh;
+  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+.header-site .navbar {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.header-site .navbar ul li a {
+  color: white;
+}
+.header-site .navbar .account {
+  position: relative;
+  margin-left: auto;
+}
+.header-site .navbar .account .form-inline button {
+  border-radius: 20px;
+  color: white;
+  padding: 7px 17px;
+  background: none;
+  border: none;
+}
+.header-site .navbar .account .form-inline button:hover {
+  background: rgba(255, 255, 255, 0.317);
+}
+.header-site .navbar .account .form-inline button:active {
+  background: white;
+  color: hsl(13, 100%, 72%);
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.start .content .h1 {
+  color: white;
+  font-size: 45px;
+  padding: 15px;
+}
+.start .content .caption {
+  color: rgba(242, 239, 239, 0.813);
+  font-size: 20px;
+  padding: 15px;
+}
+.start .btn button {
+  border-radius: 20px;
+  color: white;
+  padding: 7px 17px;
+  background: none;
+  border: none;
+}
+.start .btn button:hover {
+  background: rgba(255, 255, 255, 0.317);
+}
+.start .btn button:active {
+  background: white;
+  color: hsl(13, 100%, 72%);
+}
+
+.main-site {
+  margin-top: 120px;
+}
+
+.future, .about {
+  height: 880px;
+  overflow: hidden;
+}
+.future .header-future h2, .about .header-future h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.future .main-future, .about .main-future, .about .main-about {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.future .main-future .img-editor, .about .main-future .img-editor, .about .main-about .img-editor {
+  transform: translate(20%, -25%);
+}
+
+.content-m-f .editor {
+  margin-bottom: 110px;
+}
+.content-m-f .editor p {
+  color: rgb(61, 59, 59);
+}
+.content-m-f .managment p {
+  color: rgb(61, 59, 59);
+}
+
+.state {
+  background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 420px;
+}
+
+.state-container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  margin: auto;
+}
+.state-container .state-phone {
+  position: relative;
+  bottom: 50px;
+}
+.state-container .state-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.state-container .state-content h2 {
+  white-space: nowrap;
+  font-size: 40px;
+  color: white;
+}
+.state-container .state-content p {
+  width: 600px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(242, 239, 239, 0.813);
+}
+
+.about {
+  margin-top: 15%;
+}
+.about .main-about .img-about {
+  transform: translate(-73%, -25%);
+}
+
+.content-m-a {
+  height: 100%;
+}
+.content-m-a .about-blogr {
+  margin-bottom: 80px;
+}
+.content-m-a .about-blogr p {
+  color: rgb(61, 59, 59);
+}
+.content-m-a .powerful-tool p {
+  color: rgb(61, 59, 59);
+}
+
+footer {
+  height: 350px;
+  background: hsl(237, 17%, 21%);
+  color: white;
+  border-top-right-radius: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0px;
+}
+.container .footer-product .head--f-product h5 {
+  padding-bottom: 15px;
+}
+.container .footer-product .list-product ul li {
+  list-style: none;
+  padding-bottom: 7px;
+}
+.container .footer-product .list-product ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.container .footer-product .list-product ul li a:hover {
+  color: white;
+}
+.container .footer-company .head--f-company h5 {
+  padding-bottom: 15px;
+}
+.container .footer-company .list-company ul li {
+  list-style: none;
+  padding-bottom: 7px;
+}
+.container .footer-company .list-company ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.container .footer-company .list-company ul li a:hover {
+  color: white;
+}
+.container .footer-connect .head--f-connect h5 {
+  padding-bottom: 15px;
+}
+.container .footer-connect .list-connect ul li {
+  list-style: none;
+  padding-bottom: 7px;
+}
+.container .footer-connect .list-connect ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.container .footer-connect .list-connect ul li a:hover {
+  color: white;
+}/*# sourceMappingURL=styleblogr.css.map */

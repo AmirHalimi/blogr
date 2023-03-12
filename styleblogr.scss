@@ -1,0 +1,245 @@
+//////*start base
+@import "_component.scss";
+
+@font-face {
+   font-family: overpass;
+   src: url(font/Overpass/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+   font-family: ubuntu;
+   src: url(font/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+body
+{
+   font-family: sans-serif;
+}
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+//////*end base
+
+
+//////*start header
+.header-site
+{
+   position: relative;
+   border-bottom-left-radius: 100px;
+   height: 60vh;
+   background-image:linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+   .navbar{
+      @include container();
+      color: $color-white;
+      ul li a{
+         color: $color-white;
+      }
+      .account{
+         position: relative;
+         margin-left: auto;
+         .form-inline button{
+            @include btn-hover(rgba(255, 255, 255, 0.317));
+            &:active{
+               @include btn-active(hsl(13, 100%, 72%));
+            }
+         }
+      }
+   }
+}
+
+
+.start
+{ 
+   @include centering();
+   text-align: center;
+   .content{
+      .h1{
+         color: $color-white;
+         font-size: 45px;
+         padding: $padding-bottom;
+      }
+   .caption{
+      color: $color-caption;
+      font-size: 20px;
+      padding: $padding-bottom;
+   }
+   }
+   .btn button{
+      @include btn-hover(rgba(255, 255, 255, 0.317));
+      &:active{
+         @include btn-active(hsl(13, 100%, 72%));
+      }
+   }
+}
+//////*end header
+
+
+//////*start main
+.main-site
+{
+   margin-top: 120px;
+}
+
+////////start future 
+.future
+{
+   height: 880px;
+   overflow: hidden;
+   .header-future h2{
+      font-size: 40px;
+      letter-spacing: 1px;
+   }
+   .main-future{
+      @include container();
+      padding-top: 100px;
+      .img-editor{
+         transform: translate(20%,-25%);
+      }
+   }
+}
+
+.content-m-f
+{
+   .editor{
+      margin-bottom: 110px;
+      h2{
+         @extend %h2;
+      }
+      p{
+         color: $color-caption-main;
+      }
+   }
+   .managment{
+      h2{
+         @extend %h2;
+      }
+      p{
+         color: $color-caption-main;
+      }
+   }
+}
+////////end future 
+
+////////start state
+.state
+{
+   background-image: linear-gradient(to right,hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+   border-top-right-radius: 100px;
+   border-bottom-left-radius: 100px;
+   height: 420px;
+}
+
+.state-container
+{
+   @include container();
+   height: 100%;
+   margin: auto;
+   .state-phone{
+      position: relative;
+      bottom: 50px;
+   }
+   .state-content{
+      // margin-left: 100px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: $padding-bottom;
+      h2{
+         white-space: nowrap;
+         font-size: 40px;
+         color: $color-white;
+      }
+      p{
+         width: 600px;
+         font-size: 18px;
+         line-height: 1.8;
+         color: $color-caption;
+      }
+   }
+}
+////////end state
+
+////////start about 
+.about
+{
+   margin-top: 15%;
+   @extend .future;
+   .main-about{
+      @extend .main-future;
+      .img-about{
+         transform: translate(-73%,-25%);
+      }
+   }
+}
+
+.content-m-a
+{
+   height: 100%;
+   .about-blogr{
+      margin-bottom: 80px;      
+      h2{
+         @extend %h2;
+      }
+      p{
+         color: $color-caption-main;
+      }
+   }
+   .powerful-tool{
+      h2{
+         @extend %h2;
+      }
+      p{
+         color: $color-caption-main;
+      }
+   }
+}
+////////end about
+//////*end main 
+
+
+//////*start footer 
+footer
+{
+   height: 350px;
+   background: hsl(237, 17%, 21%);
+   color: white;
+   border-top-right-radius: 100px;
+}
+
+.container{
+   display: flex;
+   justify-content: space-between;
+   padding: 5% 0px;
+   .footer-product{
+      .head--f-product h5{
+         padding-bottom: $padding-bottom;
+      }
+      .list-product ul li{
+      @include list-hover();
+      }
+   }
+   .footer-company{
+      .head--f-company h5{
+         padding-bottom: $padding-bottom;
+      }
+      .list-company ul li{
+         @include list-hover();
+         }
+   }
+   .footer-connect{
+      .head--f-connect h5{
+         padding-bottom: $padding-bottom;
+      }
+      .list-connect ul li{
+         @include list-hover();
+         }
+   }
+}
+//////*end footer 
+
+
+//////media query(width=<) 

@@ -1,0 +1,53 @@
+//////variables
+$color-white: white;
+$color-caption: rgba(242, 239, 239, 0.813);
+$color-caption-main: rgb(61, 59, 59);
+$padding-bottom: 15px;
+
+//////mixin
+@mixin btn-hover($bg-hover){
+   border-radius: 20px;
+   color: white;
+   padding: 7px 17px;
+   background: none;
+   border: none;
+   &:hover{
+      background: $bg-hover;
+   }
+}
+
+@mixin btn-active($color){
+   background: white;
+   color: $color;
+}
+
+@mixin centering(){
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+@mixin container(){
+   width: 80%;
+   margin: auto;
+}
+
+@mixin list-hover(){
+   list-style: none;
+   padding-bottom: 7px;
+   a{
+      color: gray;
+      text-decoration: none;
+      &:hover{
+         color: white;
+      }
+}
+}
+
+//////start placeholder 
+%h2{
+   font-size: 30px;
+   padding-bottom: $padding-bottom;
+}
+//////end placeholder 
